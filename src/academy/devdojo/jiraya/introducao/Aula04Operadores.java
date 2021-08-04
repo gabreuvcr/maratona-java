@@ -1,7 +1,5 @@
 package academy.devdojo.jiraya.introducao;
 
-import java.util.Scanner;
-
 public class Aula04Operadores {
     public static void main(String[] args) {
         // + - / *
@@ -43,7 +41,8 @@ public class Aula04Operadores {
         double totalSavingsAccount = 10000;
 
         float valuePlaystation5 = 5000F;
-        boolean isPlaystation5Buyable = totalCheckingAccount >= valuePlaystation5 || totalSavingsAccount >= valuePlaystation5;
+        boolean isPlaystation5Buyable = (totalCheckingAccount >= valuePlaystation5) ||
+                                        (totalSavingsAccount) >= valuePlaystation5;
         System.out.println("isPlaystation5Buyable: " + isPlaystation5Buyable);
 
         // = += -= *= /= %=
