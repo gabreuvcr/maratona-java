@@ -10,7 +10,7 @@ Eu <nome>, morando no endereço <endereço>,
 confirmo que recebi o salário de <salario>, na data <data>
  */
 
-public class Aula03ExercicioTiposPrimitivos {
+public class Aula03TiposPrimitivos {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nome: ");
