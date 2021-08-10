@@ -1,6 +1,6 @@
-package academy.devdojo.jiraya.javacore.Aintroducaoclasses.test;
+package academy.devdojo.jiraya.javacore.introducaoclasse.test;
 
-import academy.devdojo.jiraya.javacore.Aintroducaoclasses.dominio.Teacher;
+import academy.devdojo.jiraya.javacore.introducaoclasse.domain.Teacher;
 
 public class TeacherTest01 {
     public static void main(String[] args) {

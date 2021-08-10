@@ -1,4 +1,4 @@
-package academy.devdojo.jiraya.javacore.Aintroducaoclasses.dominio;
+package academy.devdojo.jiraya.javacore.introducaoclasse.domain;
 
 public class Teacher {
     public String name;
