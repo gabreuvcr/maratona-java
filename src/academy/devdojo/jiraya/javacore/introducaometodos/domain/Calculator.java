@@ -20,4 +20,22 @@ public class Calculator {
         }
         return num1 / num2;
     }
+
+    public int sumArray(int[] numbers) {
+        int sum = 0;
+
+        for (int i: numbers) {
+            sum += i;
+        }
+        return sum;
+    }
+
+    public int sumVarArgs(int ...numbers) {
+        int sum = 0;
+
+        for (int i: numbers) {
+            sum += i;
+        }
+        return sum;
+    }
 }

@@ -11,5 +11,9 @@ public class CalculatorTest01 {
         System.out.println(calculador.multiplyTwoNumbers(23, 12));
         System.out.println(calculador.divideTwoNumbers(10, 20));
         System.out.println(calculador.divideTwoNumbers(23, 0));
+
+        int[] numbers = new int[] {1, 2, 3, 4, 5};
+        System.out.println(calculador.sumArray(numbers));
+        System.out.println(calculador.sumVarArgs(1, 2, 3, 4, 5, 6, 7));
     }
 }
