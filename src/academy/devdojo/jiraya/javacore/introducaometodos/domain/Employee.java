@@ -1,9 +1,38 @@
 package academy.devdojo.jiraya.javacore.introducaometodos.domain;
 
 public class Employee {
-    public String name;
-    public int age;
-    public double[] salaries;
+    private String name;
+    private int age;
+    private double[] salaries;
+    private double mean;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setSalaries(double[] salaries) {
+        this.salaries = salaries;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
+    public double[] getSalaries() {
+        return this.salaries;
+    }
+
+    public double getMean(){
+        return this.mean;
+    }
 
     public void print() {
         System.out.println("Name: " + this.name);
@@ -19,9 +48,11 @@ public class Employee {
             System.out.print(salary + " ");
         }
         System.out.println();
+        
+        this.printMeanSalaries();
     }
 
-    public void meanSalaries() {
+    public void printMeanSalaries() {
         if (salaries == null) {
             return;
         }
@@ -32,8 +63,8 @@ public class Employee {
             sumSalaries += salary;
         }
 
-        double meanSalaries = sumSalaries / this.salaries.length;
+        this.mean = sumSalaries / this.salaries.length;
 
-        System.out.println("Mean of the salaries: " + meanSalaries);
+        System.out.println("Mean of the salaries: " + this.mean);
     }
 }
