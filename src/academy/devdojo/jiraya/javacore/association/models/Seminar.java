@@ -9,9 +9,9 @@ public class Seminar {
         this.title = title;
     }
 
-    public Seminar(String title, Student[] students) {
+    public Seminar(String title, Local local) {
         this.title = title;
-        this.students = students;
+        this.local = local;
     }
 
     public Seminar(String title, Student[] students, Local local) {
