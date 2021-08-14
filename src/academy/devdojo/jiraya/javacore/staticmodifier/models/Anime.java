@@ -1,19 +1,24 @@
-package academy.devdojo.jiraya.javacore.initializationblock.models;
+package academy.devdojo.jiraya.javacore.staticmodifier.models;
 
 public class Anime {
     private String name;    
-    private int[] episodes;
+    private static int[] episodes;
 
     // 0 - Bloco de inicialização estatico é executado quando a JVM carregar classe
     // 1 - Alocado espaco em memória pro objeto
     // 2 - Cada atributo de classe é criado e inicializado com valores default ou o quer for passado
     // 3 - Bloco de inicialização é executado
     // 4 - Construtor é executado
-    {
-        episodes = new int[108];
-        for (int i = 0; i < episodes.length; i++) {
-            episodes[i] = i + 1;
+    static {
+        System.out.println("Inside the initiaization block 1");
+        Anime.episodes = new int[108];
+        for (int i = 0; i < Anime.episodes.length; i++) {
+            Anime.episodes[i] = i + 1;
         }
+    }
+
+    static {
+        System.out.println("Inside the initiaization block 2");
     }
     
     public Anime() {
@@ -32,11 +37,7 @@ public class Anime {
         this.name = name;
     }
 
-    public void setEpisodes(int[] episodes) {
-        this.episodes = episodes;
-    }
-
     public int[] getEpidodes() {
-        return this.episodes;
+        return Anime.episodes;
     }
 }
