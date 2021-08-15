@@ -10,20 +10,16 @@ public class InheritanceTest01 {
         address.setStreet("W 55th St");
         address.setCep("012345-679");
 
-        Person person = new Person();
-        person.setName("Katsuki");
-        person.setCpf("123.456.789-12");
+        Person person = new Person("Katsuki", "123.456.789-12");
         person.setAddress(address);
 
         person.print();
         System.out.println();
 
-        Employee employee = new Employee();
-        employee.setName("Midoriya");
-        employee.setCpf("987.654.321-21");
+        Employee employee = new Employee("Midoriya", "987.654.321-21", 2536.52);
         employee.setAddress(address);
-        employee.setSalary(2536.52);
         employee.print();
+        employee.paymentReport();
 
     }
 }

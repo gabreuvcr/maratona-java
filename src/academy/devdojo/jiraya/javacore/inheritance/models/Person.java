@@ -1,9 +1,18 @@
 package academy.devdojo.jiraya.javacore.inheritance.models;
 
 public class Person {
-    private String name;
-    private String cpf;
-    private Address address;
+    protected String name;
+    protected String cpf;
+    protected Address address;
+
+    public Person(String name) {
+        this.name = name;
+    }
+
+    public Person(String name, String cpf) {
+        this(name);
+        this.cpf = cpf;
+    }
 
     public void print() {
         System.out.println(this.name);
