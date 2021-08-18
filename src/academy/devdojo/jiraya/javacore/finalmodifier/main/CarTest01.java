@@ -1,6 +1,7 @@
 package academy.devdojo.jiraya.javacore.finalmodifier.main;
 
 import academy.devdojo.jiraya.javacore.finalmodifier.models.Car;
+import academy.devdojo.jiraya.javacore.finalmodifier.models.Ferrari;
 
 public class CarTest01 {
     public static void main(String[] args) {
@@ -11,5 +12,8 @@ public class CarTest01 {
         System.out.println(car.CUSTOMER);
         car.CUSTOMER.setName("Kuririn");
         System.out.println(car.CUSTOMER);
+
+        Ferrari ferrari = new Ferrari("Roma");
+        ferrari.print();
     }
 }

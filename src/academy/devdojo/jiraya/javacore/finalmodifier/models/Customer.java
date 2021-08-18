@@ -5,7 +5,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Comprador: " + this.name;
+        return "Customer: " + this.name;
     }
 
     public String getName() {

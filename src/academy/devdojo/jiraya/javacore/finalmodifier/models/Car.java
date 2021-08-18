@@ -9,6 +9,10 @@ public class Car {
         this.name = name;
     }
 
+    public final void print() {
+        System.out.println("Name: " + this.name);
+    }
+
     public String getName() {
         return this.name;
     }
