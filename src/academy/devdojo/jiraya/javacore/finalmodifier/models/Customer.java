@@ -1,18 +1,19 @@
 package academy.devdojo.jiraya.javacore.finalmodifier.models;
 
-public class Car {
+public class Customer {
     private String name;
-    public static final double LIMIT_SPEED = 250;
-    public final Customer CUSTOMER = new Customer();
 
-    public Car(String name) {
-        this.name = name;
+    @Override
+    public String toString() {
+        return "Comprador: " + this.name;
     }
 
     public String getName() {
         return this.name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
 }
