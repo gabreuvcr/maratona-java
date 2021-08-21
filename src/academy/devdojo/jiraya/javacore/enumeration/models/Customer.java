@@ -2,17 +2,20 @@ package academy.devdojo.jiraya.javacore.enumeration.models;
 
 public class Customer {
     private String name;
-    private CustomerType type;
+    private CustomerType customerType;
+    private PaymentType paymentType;
 
-    public Customer(String name, CustomerType type) {
+    public Customer(String name, CustomerType customerType, PaymentType paymentType) {
         this.name = name;
-        this.type = type;
+        this.customerType = customerType;
+        this.paymentType = paymentType;
     }
 
     @Override
     public String toString() {
         return "Customer: " + this.name + " - " 
-                + this.type + 
-                "(" + this.type.VALUE + ")"; 
+                + this.customerType + 
+                "(" + this.customerType.VALUE + ") - "
+                + this.paymentType; 
     }
 }
