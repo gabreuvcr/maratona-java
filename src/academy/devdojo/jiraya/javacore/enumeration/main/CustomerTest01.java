@@ -13,5 +13,7 @@ public class CustomerTest01 {
         System.out.println(customer2);
         System.out.println(PaymentType.DEBITO.calculateDiscount(100));
         System.out.println(PaymentType.CREDITO.calculateDiscount(100));
+        System.out.println(CustomerType.customerTypePerValue(1));
+        System.out.println(CustomerType.customerTypePerValue(2));
     }
 }

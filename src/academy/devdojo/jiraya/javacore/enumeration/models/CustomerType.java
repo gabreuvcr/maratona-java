@@ -9,4 +9,13 @@ public enum CustomerType {
     CustomerType(int value) {
         this.VALUE = value;
     }
+
+    public static CustomerType customerTypePerValue(int value) {
+        for (CustomerType customerType: values()) {
+            if (customerType.VALUE == value) {
+                return customerType;
+            }
+        }
+        return null;
+    }
 }
