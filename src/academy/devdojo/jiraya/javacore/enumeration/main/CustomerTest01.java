@@ -10,6 +10,5 @@ public class CustomerTest01 {
 
         System.out.println(customer1);
         System.out.println(customer2);
-
     }
 }

@@ -11,21 +11,8 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer: " + this.name + " - " + this.type; 
-    }
-
-    public String getName() {
-        return this.name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public CustomerType getType() {
-        return this.type;
-    }
-
-    public void setType(CustomerType type) {
-        this.type = type;
+        return "Customer: " + this.name + " - " 
+                + this.type + 
+                "(" + this.type.VALUE + ")"; 
     }
 }
