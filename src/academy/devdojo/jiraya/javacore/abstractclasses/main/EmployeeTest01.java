@@ -8,7 +8,7 @@ public class EmployeeTest01 {
         Manager manager = new Manager("Nami", 5000);
         Developer developer = new Developer("Zoro", 12000);
 
-        System.out.println(manager);
-        System.out.println(developer);
+        manager.print();
+        developer.print();
     }
 }

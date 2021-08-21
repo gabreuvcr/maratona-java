@@ -18,4 +18,10 @@ public class Developer extends Employee {
                 ", salary=" + this.salary +
                 "}";
     }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println(this);
+    }
 }
