@@ -1,7 +1,6 @@
 package academy.devdojo.jiraya.javacore.abstractclasses.main;
 
 import academy.devdojo.jiraya.javacore.abstractclasses.models.Developer;
-import academy.devdojo.jiraya.javacore.abstractclasses.models.Employee;
 import academy.devdojo.jiraya.javacore.abstractclasses.models.Manager;
 
 public class EmployeeTest01 {
