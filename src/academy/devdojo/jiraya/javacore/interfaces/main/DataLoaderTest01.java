@@ -1,5 +1,6 @@
 package academy.devdojo.jiraya.javacore.interfaces.main;
 
+import academy.devdojo.jiraya.javacore.interfaces.models.DataLoader;
 import academy.devdojo.jiraya.javacore.interfaces.models.DatabaseLoader;
 import academy.devdojo.jiraya.javacore.interfaces.models.FileLoader;
 
@@ -16,5 +17,8 @@ public class DataLoaderTest01 {
 
         databaseLoader.checkPermission();
         fileLoader.checkPermission();
+
+        DataLoader.retrieveMaxDataSize();
+        DatabaseLoader.retrieveMaxDataSize();
     }
 }
