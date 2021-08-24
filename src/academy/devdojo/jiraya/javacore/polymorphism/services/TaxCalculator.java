@@ -1,6 +1,7 @@
 package academy.devdojo.jiraya.javacore.polymorphism.services;
 
 import academy.devdojo.jiraya.javacore.polymorphism.models.Product;
+import academy.devdojo.jiraya.javacore.polymorphism.models.Tomato;
 
 public class TaxCalculator {
 
@@ -11,5 +12,9 @@ public class TaxCalculator {
         System.out.println("Value: " + product.getValue());
         System.out.println("Tax: " + tax);
         System.out.println("Total: " + (product.getValue() + tax));
+        if (product instanceof Tomato) {
+            Tomato tomato = (Tomato) product;
+            System.out.println("Expiration date: " + tomato.getExpirationDate());
+        }
     }
 }
