@@ -1,7 +1,7 @@
 package academy.devdojo.jiraya.javacore.polymorphism.services;
 
-import academy.devdojo.jiraya.javacore.polymorphism.models.Product;
-import academy.devdojo.jiraya.javacore.polymorphism.models.Tomato;
+import academy.devdojo.jiraya.javacore.polymorphism.domain.Product;
+import academy.devdojo.jiraya.javacore.polymorphism.domain.Tomato;
 
 public class TaxCalculator {
 
