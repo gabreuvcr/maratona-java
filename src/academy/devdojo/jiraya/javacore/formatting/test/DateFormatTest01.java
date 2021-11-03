@@ -1,4 +1,4 @@
-package academy.devdojo.jiraya.javacore.dates.test;
+package academy.devdojo.jiraya.javacore.formatting.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;
